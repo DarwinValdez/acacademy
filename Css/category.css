@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+li, a {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+button {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+   
+}
+
+.logo {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+   
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px ;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #af0000  ;
+}
+
+button {
+    position: relative;
+    top: -10px;
+    margin-left: 30px;
+    padding: 9px 35px ;
+    background-color: #af0000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer ;
+    transition:all 0.3s ease 0s;;
+}
+
+button:hover{
+    background-color: rgba(12, 12, 12, 0.8);
+}
+
+.ctb{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+    margin-left: 20px;
+    padding: 6px 20px ;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    border-radius:50px;
+    cursor: pointer ;
+    transition:all 0.3s ease 0s;;
+}
+
+.ctb:hover{
+    color: red;
+    background-color: #ffffff;
+}
+.title-1{
+    font-size: 0.7em;
+    position: relative;
+    left: -10em;
+    margin-right: auto;   
+    display: inline-block;
+    font-family:'Montserrat', sans-serif;
+}
+
+.title-1:hover{
+    cursor: pointer;
+}
+
+hr {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: -2em;
+  }
+  section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #af0000 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #af0000;
+    margin: 1em 0;
+    background-color: #f0f0f000;
+  }
+p {
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    background-color: #f0f0f000;
+  }
+.icon-wrapper {
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #af0000;
+    background-color: #f0f0f000;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+.card:hover {
+    background-position: 0 100%;
+  }
+.card:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+  }
+.icon-wrapper {
+    background-color: #ffffff;
+    color: #ff0000;
+  }
+.card:hover h3 {
+    color: #ffffff;
+  }
+.card:hover p {
+    color: #f0f0f0;
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 0 2em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em 3em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
